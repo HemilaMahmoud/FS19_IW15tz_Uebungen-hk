@@ -18,10 +18,33 @@
         <div class="container">
             <h1>HTML Formular</h1>
             <hr>
-            <form>
+            <form class="form-inline">
+                <!--    Suchbegriff
+                        Datum : https://eonasdan.github.io/bootstrap-datetimepicker/
+                        Ort
+                        Umkreis
+                        Button „Senden“-->
               <!-- https://getbootstrap.com/docs/4.3/components/forms/#form-controls -->
               <!-- http://html5pattern.com/Dates -->
               <!-- https://www.w3schools.com/howto/howto_css_inline_form.asp -->
+            
+              <div class="form-inline input">
+                <input type="text" class="form-control" id="searchTerm" placeholder="Suchbegriff" required="true">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" id="searchTermValidation" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0zm0 0h24v24H0V0z"/>
+                <path d="M16.59 7.58L10 14.17l-3.59-3.58L5 12l5 5 8-8zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                </svg> -->
+              </div>
+              <div class="form-inline input">
+                <input type="date" class="form-control" id="date" placeholder="Datum" required="true">
+              </div>
+              <div class="form-inline input">
+                <input type="text" class="form-control" id="place" placeholder="Ort" required="true">
+              </div>
+              <div class="form-inline input">
+                <input type="text" class="form-control" id="area" placeholder="Umkreis" required="true" pattern="[a-zA-Z0-9]{4}">
+              </div>
+              <button type="submit" class="btn btn-primary">Senden</button>
             </form>
         </div>
         <script type="text/javascript">

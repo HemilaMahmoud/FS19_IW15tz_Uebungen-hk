@@ -47,3 +47,6 @@ a.navbar-brand {
 .navbar-brand:hover {
   color: #4a4f4a;
 }
+.btn-primary {
+  margin-left: 5px;
+}
