@@ -12,6 +12,9 @@ function klickZaehler() {
     document.getElementById("klicknumbers").innerHTML = localStorage.clickcount;
   //  document.getElementById("clickers").innerHTML = "Sie haben " + localStorage.clickcount + " geklickt";
   }
+  else{
+    document.getElementById("notSupport").innerHTML = "Your Browser doesn't support this function"
+  }
 
 }
 
@@ -21,5 +24,8 @@ function start (){
       localStorage.clickcount = Number (localStorage.clickcount);
     }
     document.getElementById("klicknumbers").innerHTML = localStorage.clickcount;
+  }
+  else{
+    document.getElementById("notSupport").innerHTML = "Your Browser doesn't support this function"
   }
 }
