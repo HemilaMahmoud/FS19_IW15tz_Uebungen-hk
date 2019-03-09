@@ -2,3 +2,18 @@ body {
   background-color: coral;
   color: white;
 }
+.container{
+  width: 22rem;
+}
+img{
+  max-height: 10em;
+  max-width: 10em;
+ margin-top: 1em
+}
+.card-body{
+  color:black;
+}
+.card-title{
+  font-size: 1.5em;
+}
+
